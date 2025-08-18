@@ -5,7 +5,8 @@ public class Aluno {
 	private double nota2;
 	private double nota3;
 	STATUS situacaoAluno;
-		
+	MATRICULA situacaoMatricula;
+
 	public Aluno(double nota1, double nota2, double nota3) {
 		super();
 		this.nota1 = nota1;
@@ -18,6 +19,14 @@ public class Aluno {
 		 APROVADO,
 	     REPROVADO
 	}
+
+	public enum MATRICULA {
+		MATRICULADO,
+		PENDENTE,
+		RECUSADO
+	}
+
+
 
 	// Método para calcular média do aluno
 	public double calcularMediaAluno() {

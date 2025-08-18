@@ -1,23 +1,29 @@
 package Construtores;
 
 import Construtores.Aluno.STATUS;
+import Construtores.Aluno.MATRICULA;
 
 public class Construtor {
 
 	public static void main(String[] args) {
-		// passando os dados através do construtor com sobrecarga
+		// passando os dados atravï¿½s do construtor com sobrecarga
 		Aluno alu = new Aluno( 8,  8,  8);
-		// calculando a média
+		// calculando a mï¿½dia
 		double mediaAlunoFinal = alu.calcularMediaAluno();
 		
-		// definindo situação do aluno
+		// definindo situaï¿½ï¿½o do aluno
 		if (mediaAlunoFinal < 6 ) {
 			alu.situacaoAluno = STATUS.REPROVADO;
 		} else {
 			alu.situacaoAluno = STATUS.APROVADO;
 		}
-		
-		// imprimindo situação do aluno
-		System.out.println("A média do aluno é : " + alu.calcularMediaAluno() + " e o aluno está " + alu.situacaoAluno);
+
+		// imprimindo situaÃ§Ã£o do aluno
+		System.out.println("A mÃ©dia do aluno Ã© : " + alu.calcularMediaAluno() + " e o aluno estÃ¡ " + alu.situacaoAluno);
+
+		// usa enum MATRICULA
+		alu.situacaoMatricula = MATRICULA.MATRICULADO;
+		System.out.println("SituaÃ§Ã£o da matrÃ­cula do aluno: " + alu.situacaoMatricula);
+
 	}
 }
