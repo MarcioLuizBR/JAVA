@@ -30,7 +30,6 @@ public class PessoaDao extends Dao {
 	}
 
 	public void excluirPessoa(Pessoa p) throws Exception {
-
 		open();
 		stmt = con.prepareStatement("delete from Pessoa where idPessoa = ?");
 		stmt.setInt(1, p.getIdPessoa());
@@ -52,7 +51,7 @@ public class PessoaDao extends Dao {
 //		        System.out.println("Falha ao recuperar o registro. Contate TI");
 			}
 			finally {
-				System.out.println("Fechando a conex„o com banco de dados no Finally");
+				System.out.println("Fechando a conex√£o com banco de dados no Finally");
 				close();
 			}
 			Pessoa p = null;
