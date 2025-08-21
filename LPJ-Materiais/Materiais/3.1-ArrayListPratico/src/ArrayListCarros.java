@@ -8,6 +8,7 @@ public class ArrayListCarros {
         ArrayList<String> carros = new ArrayList<>();
         
         // adicionando Carros ao arraylist
+        carros.add("FLUENCE");
         carros.add("KOMBI");
         carros.add("JAGUAR");
         carros.add("BMW");

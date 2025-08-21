@@ -8,7 +8,7 @@ public class ThreadsTeste {
 
     private static void contador(String name){
         i++;
-        System.out.println("O valor do contador atual é: " + i + ", thread : " + name);
+        System.out.println("O valor do contador atual Ã©: " + i + ", thread : " + name);
     }
 
     private static Runnable t1 = new Runnable() {
@@ -22,6 +22,7 @@ public class ThreadsTeste {
         }
     };
 
+    
     private static Runnable t2 = new Runnable() {
         public void run() {
             try{
